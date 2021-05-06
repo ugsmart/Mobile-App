@@ -47,12 +47,12 @@ const Textview1 = ({num})=>{
 export default function Login({navigation}){
     return(
       <ScrollView contentContainerStyle={{flexGrow:1}}>
-      <View style={style.logview}>
+       <View style={style.logview}>
          <Image style={style.img} resizeMode="center" source={require("./assets/img.png")}/>
          <Text style={{fontSize:RFPercentage(8.5),fontFamily:'Titan',alignSelf:'center'}}>Login</Text>
          <Textview text="Email" num={20} icon="mail-outline" jud={false}/>
          <Textview1 num={10} jud={true}/>
-         <Button title="Login" onPress={()=>{navigation.navigate('Home')}} buttonStyle={{marginTop:20,padding:15,backgroundColor:"#37A7E8"}} containerStyle={{width:"100%"}}/>
+         <Button title="Login" onPress={()=>{navigation.navigate('Main')}} buttonStyle={{marginTop:20,padding:15,backgroundColor:"#37A7E8"}} containerStyle={{width:"100%"}}/>
          <TouchableOpacity onPress={()=>{navigation.navigate('Signup')}} style={style.Opac}>
           <Text style={style.text}>Don't have an Account? Sign up now.</Text>
          </TouchableOpacity>
