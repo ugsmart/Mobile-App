@@ -13,7 +13,6 @@ const Inputview = ({text}) =>{
   )
 }
 
-
 const Ipicker = ({fun})=>{
   return(
     <View style={{alignItems:'center'}}>
